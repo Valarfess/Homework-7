@@ -29,10 +29,10 @@ final class MyHashMap {
     public static void outputCollection(Map<Person, Integer> map) {
         System.out.println("Вывод: ");
 
-//        for (Map.Entry<Person, Integer> keyValuePair : map.entrySet()) {
-//            System.out.println(keyValuePair.getKey() + " - " + keyValuePair.getValue());
-//        }
-//
-//        System.out.println();
+        for (Map.Entry<Person, Integer> keyValuePair : map.entrySet()) {
+            System.out.println(keyValuePair.getKey() + " - " + keyValuePair.getValue());
+        }
+
+        System.out.println();
     }
 }

@@ -25,7 +25,7 @@ final class MyArrayList {
     }
 
 
-    public static void outputCollection(ArrayList<Person> list) {
+    final static void outputCollection(ArrayList<Person> list) {
         System.out.println();
 
         for (Person number : list) {
