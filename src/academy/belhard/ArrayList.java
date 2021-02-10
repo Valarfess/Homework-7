@@ -4,14 +4,16 @@ import java.util.List;
 
 
 final class MyArrayList {
+
     public static void main(String[] args) {
+
         Person pers1 = new Person("Nikita","Pupkin",Gender.MALE);
         Person pers2 = new Person("Stas","Mihailov",Gender.FEMALE);
         Person pers3 = new Person("Gena","Razdolbaev",Gender.MALE);
         Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.ArrayList<Person> personClub = new ArrayList<>();
+        java.util.ArrayList<Person> personClub = new java.util.ArrayList<>();
 
         personClub.add(pers1);
         personClub.add(pers2);

@@ -1,9 +1,9 @@
 package academy.belhard;
 
 final class Person {
-    private String firstName;
-    private String lastName;
-    private Gender gender;
+    private final String firstName;
+    private final String lastName;
+    private final Gender gender;
 
     public Person (String firstName, String lastName, Gender gender){
         this.firstName = firstName;

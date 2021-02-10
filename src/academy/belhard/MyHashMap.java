@@ -15,7 +15,7 @@ final class MyHashMap {
         Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        Map<Person, Integer> Persons = new java.util.HashMap<>();
+        java.util.HashMap<Person, Integer> Persons = new java.util.HashMap<>();
 
         Persons.put(pers1, 1);
         Persons.put(pers2, 2);
@@ -24,8 +24,6 @@ final class MyHashMap {
         Persons.put(pers5, 5);
 
         outputCollection(Persons);
-
-
     }
 
     public static void outputCollection(Map<Person, Integer> map) {
