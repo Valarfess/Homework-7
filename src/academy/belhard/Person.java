@@ -1,6 +1,6 @@
 package academy.belhard;
 
-public class Person {
+final class Person {
     private String firstName;
     private String lastName;
     private Gender gender;
@@ -10,6 +10,8 @@ public class Person {
         this.lastName = lastName;
         this.gender = gender;
     }
+
+
 
     @Override
     public boolean equals(Object o) {

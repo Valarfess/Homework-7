@@ -11,6 +11,7 @@ class MyHashSet {
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
         Set<Person> Persons = new java.util.HashSet<>();
+
         Persons.add(pers1);
         Persons.add(pers2);
         Persons.add(pers3);

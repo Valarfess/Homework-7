@@ -3,27 +3,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class ArrayList {
+final class MyArrayList {
     public static void main(String[] args) {
-        java.util.ArrayList<Integer> personClub = new ArrayList<>();
-        personClub.add(1);
-        personClub.add(2);
-        personClub.add(3);
-        personClub.add(4);
-        personClub.add(5);
+        Person pers1 = new Person("Nikita","Pupkin",Gender.MALE);
+        Person pers2 = new Person("Stas","Mihailov",Gender.FEMALE);
+        Person pers3 = new Person("Gena","Razdolbaev",Gender.MALE);
+        Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
+        Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        outputCollection(personClub);
+        java.util.ArrayList<Person> personClub = new ArrayList<>();
 
-
-        personClub.remove(3);
+        personClub.add(pers1);
+        personClub.add(pers2);
+        personClub.add(pers3);
+        personClub.add(pers4);
+        personClub.add(pers5);
 
         outputCollection(personClub);
     }
 
-    public static void outputCollection(List<Integer> list) {
+
+    public static void outputCollection(ArrayList<Person> list) {
         System.out.println();
 
-        for (Integer number : list) {
+        for (Person number : list) {
             System.out.print(number + " ");
         }
 
