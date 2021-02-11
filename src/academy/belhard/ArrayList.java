@@ -1,7 +1,7 @@
 package academy.belhard;
-import java.util.ArrayList;
-import java.util.List;
 
+
+import java.util.ArrayList;
 
 final class MyArrayList {
 
@@ -13,7 +13,7 @@ final class MyArrayList {
         Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.ArrayList<Person> personClub = new java.util.ArrayList<>();
+        java.util.ArrayList<Person> personClub = new java.util.ArrayList<Person>();
 
         personClub.add(pers1);
         personClub.add(pers2);
@@ -29,9 +29,8 @@ final class MyArrayList {
         System.out.println();
 
         for (Person number : list) {
-            System.out.print(number + " ");
+            System.out.print("Кто и номер:" + " " );
         }
-
         System.out.println();
     }
 }

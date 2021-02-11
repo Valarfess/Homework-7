@@ -1,4 +1,6 @@
 package academy.belhard;
+
+import java.util.Map;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -12,7 +14,7 @@ final class MyHashSet {
         Person pers4 = new Person("Gena","Razdolbaev",Gender.MALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.HashSet<Person> Persons = new java.util.HashSet<>();
+        java.util.HashSet<Person> Persons = new java.util.HashSet<Person>();
 
         Persons.add(pers1);
         Persons.add(pers2);
@@ -23,7 +25,7 @@ final class MyHashSet {
         outputCollection(Persons);
     }
 
-    public static void outputCollection(HashSet<Person> set) {
+    public static void outputCollection(java.util.HashSet<Person> set) {
         System.out.println("На выход: ");
 
         for (Person number : set) {
