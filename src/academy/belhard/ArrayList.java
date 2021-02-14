@@ -22,14 +22,16 @@ final class MyArrayList {
         personClub.add(pers5);
 
         outputCollection(personClub);
+
+        System.out.println("Всего в списке " + personClub.size() + " элементов");
     }
 
 
-    final static void outputCollection(ArrayList<Person> list) {
+    final static void outputCollection(java.util.ArrayList<Person> list) {
         System.out.println();
 
-        for (Person number : list) {
-            System.out.print("Кто и номер:" + " " );
+        for (Person personClub : list) {
+            System.out.println(personClub.toString());
         }
         System.out.println();
     }

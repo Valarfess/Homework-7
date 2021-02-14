@@ -15,21 +15,24 @@ final class MyHashMap {
         Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.HashMap<Person, Integer> Persons = new java.util.HashMap<Person, Integer>();
+        java.util.HashMap<Integer,Person> personClub = new java.util.HashMap<Integer,Person>();
 
-        Persons.put(pers1, 1);
-        Persons.put(pers2, 2);
-        Persons.put(pers3, 3);
-        Persons.put(pers4, 4);
-        Persons.put(pers5, 5);
+        personClub.put(1, pers1);
+        personClub.put(2, pers2);
+        personClub.put(3, pers3);
+        personClub.put(4, pers4);
+        personClub.put(5, pers5);
 
-        outputCollection(Persons);
+        outputCollection(personClub);
+
+        System.out.println("Всего в списке " + personClub.size() + " элементов");
+
     }
 
-    public static void outputCollection(java.util.HashMap<Person, Integer> map) {
-        System.out.println("Вывод: ");
+    public static void outputCollection(java.util.HashMap<Integer,Person> map) {
+        System.out.println("И вот что получилось: ");
 
-        for (Map.Entry<Person, Integer> keyValuePair : map.entrySet()) {
+        for (Map.Entry<Integer,Person> keyValuePair : map.entrySet()) {
             System.out.println(keyValuePair.getKey() + " - " + keyValuePair.getValue());
         }
 

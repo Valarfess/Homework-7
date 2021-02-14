@@ -18,22 +18,22 @@ final class Person {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return firstName == person.firstName &&
-                lastName == person.lastName &&
-                gender == person.gender;
+        return firstName.equals(firstName) &&
+                lastName.equals(lastName) &&
+                gender.equals(gender);
     }
-//    int f = Integer.parseInt(firstName);
-//    int l = Integer.parseInt(lastName);
-//    int g = Integer.parseInt(String.valueOf(gender));
-//
-//    @Override
-//    public int hashCode() {
-//        return f + l + g;
-//    }
+
+
+    @Override
+    public int hashCode() {
+
+        int result = firstName.hashCode() + lastName.hashCode() + gender.hashCode();
+        return result;
+    }
 
     @Override
     public String toString() {
-        return "Person: " +
+        return  "ComedyClub residents: " +
                 "firstName - " + firstName +
                 ", lastName - " + lastName +
                 ", gender - " + gender +

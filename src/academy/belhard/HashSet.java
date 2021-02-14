@@ -14,22 +14,24 @@ final class MyHashSet {
         Person pers4 = new Person("Gena","Razdolbaev",Gender.MALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.HashSet<Person> Persons = new java.util.HashSet<Person>();
+        java.util.HashSet<Person> personClub = new java.util.HashSet<Person>();
 
-        Persons.add(pers1);
-        Persons.add(pers2);
-        Persons.add(pers3);
-        Persons.add(pers4);
-        Persons.add(pers5);
+        personClub.add(pers1);
+        personClub.add(pers2);
+        personClub.add(pers3);
+        personClub.add(pers4);
+        personClub.add(pers5);
 
-        outputCollection(Persons);
+        outputCollection(personClub);
+
+        System.out.println("Всего в списке " + personClub.size() + " элементов");
     }
 
     public static void outputCollection(java.util.HashSet<Person> set) {
-        System.out.println("На выход: ");
+        System.out.println();
 
-        for (Person number : set) {
-            System.out.println(number + " ");
+        for (Person personClub : set) {
+            System.out.println(personClub.toString());
         }
 
         System.out.println();
