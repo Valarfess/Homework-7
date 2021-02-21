@@ -1,11 +1,12 @@
 package academy.belhard;
 
-import java.util.Map;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 
-final class MyHashMap {
+public class MyHashMap {
 
     public static void main(String[] args) {
 
@@ -15,7 +16,7 @@ final class MyHashMap {
         Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.HashMap<Integer,Person> personClub = new java.util.HashMap<Integer,Person>();
+        HashMap<Integer,Person> personClub = new HashMap<Integer,Person>();
 
         personClub.put(1, pers1);
         personClub.put(2, pers2);
@@ -29,7 +30,7 @@ final class MyHashMap {
 
     }
 
-    public static void outputCollection(java.util.HashMap<Integer,Person> map) {
+    public static void outputCollection(HashMap<Integer,Person> map) {
         System.out.println("И вот что получилось: ");
 
         for (Map.Entry<Integer,Person> keyValuePair : map.entrySet()) {

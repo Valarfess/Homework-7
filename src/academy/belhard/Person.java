@@ -1,6 +1,6 @@
 package academy.belhard;
 
-final class Person {
+public class Person {
     private final String firstName;
     private final String lastName;
     private final Gender gender;
@@ -18,9 +18,9 @@ final class Person {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return firstName.equals(firstName) &&
-                lastName.equals(lastName) &&
-                gender.equals(gender);
+        return this.firstName.equals(firstName) &&
+                this.lastName.equals(lastName) &&
+                this.gender.equals(gender);
     }
 
 

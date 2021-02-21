@@ -1,20 +1,19 @@
 package academy.belhard;
 
-import java.util.Map;
-import java.util.HashSet;
-import java.util.Set;
 
-final class MyHashSet {
+import java.util.ArrayList;
+
+public class MyArrayList {
 
     public static void main(String[] args) {
 
         Person pers1 = new Person("Nikita","Pupkin",Gender.MALE);
-        Person pers2 = new Person("Nikita","Pupkin",Gender.MALE);
+        Person pers2 = new Person("Stas","Mihailov",Gender.FEMALE);
         Person pers3 = new Person("Gena","Razdolbaev",Gender.MALE);
-        Person pers4 = new Person("Gena","Razdolbaev",Gender.MALE);
+        Person pers4 = new Person("Turbo","Fromcamedy",Gender.FEMALE);
         Person pers5 = new Person("Dusha","Metelkin",Gender.MALE);
 
-        java.util.HashSet<Person> personClub = new java.util.HashSet<Person>();
+        ArrayList<Person> personClub = new ArrayList<Person>();
 
         personClub.add(pers1);
         personClub.add(pers2);
@@ -27,13 +26,13 @@ final class MyHashSet {
         System.out.println("Всего в списке " + personClub.size() + " элементов");
     }
 
-    public static void outputCollection(java.util.HashSet<Person> set) {
+
+    final static void outputCollection(ArrayList<Person> list) {
         System.out.println();
 
-        for (Person personClub : set) {
+        for (Person personClub : list) {
             System.out.println(personClub.toString());
         }
-
         System.out.println();
     }
 }
