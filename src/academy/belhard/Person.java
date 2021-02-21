@@ -14,13 +14,14 @@ public class Person {
 
 
     @Override
+
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Person)) return false;
         Person person = (Person) o;
-        return this.firstName.equals(firstName) &&
-                this.lastName.equals(lastName) &&
-                this.gender.equals(gender);
+        return person.firstName.equals(firstName) &&
+                person.lastName.equals(lastName) &&
+                person.gender.equals(gender);
     }
 
 
